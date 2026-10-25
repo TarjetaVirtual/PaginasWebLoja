@@ -1,0 +1,1442 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#493126">
+    <meta name="description"
+        content="Invitaciones digitales para bodas, XV años y todo tipo de eventos. Menús digitales y páginas web profesionales en Loja, Ecuador.">
+    <title>Páginas Web Loja | Invitaciones digitales y diseño web</title>
+    <link rel="icon" href="foto.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --c950: #302018;
+            --c900: #493126;
+            --c800: #5e4030;
+            --c700: #73513b;
+            --c500: #96775b;
+            --b300: #d8c2a6;
+            --b200: #e8d8c3;
+            --b100: #f3eadf;
+            --cream: #fbf8f3;
+            --white: #fffdf9;
+            --ink: #352a23;
+            --muted: #75675c;
+            --line: #e8ddd0;
+            --shadow: 0 16px 45px #3c271b12;
+            --radius: 22px;
+            --max: 1160px
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 105px
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--cream);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            overflow-wrap: anywhere
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        a {
+            color: inherit
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid #b99871;
+            outline-offset: 3px
+        }
+
+        .container {
+            width: min(var(--max), calc(100% - 40px));
+            margin-inline: auto
+        }
+
+        .section {
+            padding: clamp(58px, 8vw, 100px) 0
+        }
+
+        .section-header {
+            max-width: 760px;
+            text-align: center;
+            margin: 0 auto 42px
+        }
+
+        .eyebrow,
+        .section-header>span,
+        .portfolio-kicker {
+            display: inline-block;
+            color: var(--c700);
+            font-size: .74rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            margin-bottom: 10px
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin-top: 0
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2
+        }
+
+        h2 {
+            color: var(--c950);
+            font-size: clamp(2rem, 4vw, 3.1rem);
+            letter-spacing: -.035em;
+            margin-bottom: 15px
+        }
+
+        .section-header p {
+            color: var(--muted);
+            margin-bottom: 0
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #fbf8f3f5;
+            border-bottom: 1px solid #73513b26;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 5px 24px #3020180f
+        }
+
+        .nav {
+            min-height: 86px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            min-width: 0
+        }
+
+        .logo img {
+            width: 47px;
+            height: 47px;
+            object-fit: contain;
+            flex: 0 0 auto
+        }
+
+        .logo strong {
+            display: block;
+            color: var(--c950);
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            line-height: 1.2
+        }
+
+        .logo span {
+            display: block;
+            color: var(--muted);
+            font-size: .77rem;
+            margin-top: 4px
+        }
+
+        .nav nav {
+            display: flex;
+            align-items: center;
+            gap: clamp(15px, 2.5vw, 30px)
+        }
+
+        .nav nav a {
+            text-decoration: none;
+            color: var(--c900);
+            font-size: .9rem;
+            font-weight: 700
+        }
+
+        .nav nav a:hover {
+            color: var(--c500)
+        }
+
+        .button,
+        .header-button,
+        .portfolio-button,
+        .contact-form button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 1px solid var(--c900);
+            border-radius: 999px;
+            padding: 13px 20px;
+            background: var(--c900);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 750;
+            font-size: .9rem;
+            line-height: 1.4;
+            text-align: center;
+            transition: transform .2s, background .2s, color .2s, box-shadow .2s;
+            cursor: pointer
+        }
+
+        .button:hover,
+        .header-button:hover,
+        .portfolio-button:hover,
+        .contact-form button:hover {
+            background: var(--b200);
+            color: var(--c950);
+            box-shadow: 0 8px 20px #4931261f;
+            transform: translateY(-1px)
+        }
+
+        .button-secondary {
+            background: transparent;
+            color: var(--c900);
+            border-color: var(--b300)
+        }
+
+        .button-secondary:hover {
+            background: var(--b100)
+        }
+
+        .hero {
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            padding: clamp(60px, 8vw, 100px) 0;
+            background: linear-gradient(135deg, #f7efe5, #fffdf9 56%, #eadbc8)
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            right: -180px;
+            top: -180px;
+            background: #d8c2a647
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+            align-items: center;
+            gap: clamp(35px, 6vw, 75px)
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 8px 13px;
+            border: 1px solid var(--b300);
+            border-radius: 999px;
+            background: #fffdf9bf;
+            color: var(--c800);
+            font-size: .8rem;
+            font-weight: 750;
+            margin-bottom: 22px
+        }
+
+        .hero h1 {
+            color: var(--c950);
+            font-size: clamp(2.4rem, 5vw, 4.4rem);
+            letter-spacing: -.055em;
+            line-height: 1.06;
+            margin-bottom: 22px
+        }
+
+        .hero-content>p {
+            max-width: 620px;
+            color: var(--muted);
+            font-size: clamp(1rem, 1.4vw, 1.12rem);
+            line-height: 1.85;
+            margin-bottom: 28px
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px
+        }
+
+        .numbers {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 36px;
+            padding-top: 25px;
+            border-top: 1px solid var(--b300)
+        }
+
+        .numbers strong {
+            display: block;
+            color: var(--c900);
+            font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+            line-height: 1.2
+        }
+
+        .numbers span {
+            display: block;
+            color: var(--muted);
+            font-size: .76rem;
+            margin-top: 6px;
+            line-height: 1.5
+        }
+
+        .hero-foto {
+            display: block;
+            width: 100%;
+            max-height: 620px;
+            object-fit: contain;
+            filter: drop-shadow(0 24px 28px #30201821)
+        }
+
+        .portfolio-special {
+            background: var(--white)
+        }
+
+        .portfolio-category {
+            margin-top: clamp(48px, 7vw, 78px)
+        }
+
+        .portfolio-category-heading {
+            max-width: 790px;
+            margin-bottom: 25px
+        }
+
+        .portfolio-category-heading h3 {
+            color: var(--c950);
+            font-size: clamp(1.55rem, 3vw, 2.15rem);
+            letter-spacing: -.025em;
+            margin-bottom: 10px
+        }
+
+        .portfolio-category-heading p {
+            color: var(--muted);
+            margin-bottom: 0
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: stretch;
+            gap: 23px
+        }
+
+        .portfolio-gallery-single {
+            grid-template-columns: minmax(0, 850px)
+        }
+
+        .design-card {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: 0 8px 25px #3c271b0e;
+            transition: transform .25s, box-shadow .25s, border-color .25s
+        }
+
+        .design-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--b300);
+            box-shadow: var(--shadow)
+        }
+
+        .design-image {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            background: var(--b100)
+        }
+
+        .design-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform .45s
+        }
+
+        .design-image:hover img {
+            transform: scale(1.035)
+        }
+
+        .image-overlay {
+            position: absolute;
+            inset: auto 0 0;
+            display: flex;
+            justify-content: center;
+            padding: 35px 12px 15px;
+            color: white;
+            font-size: .85rem;
+            font-weight: 800;
+            background: linear-gradient(transparent, #302018cc);
+            opacity: 0;
+            transition: opacity .25s
+        }
+
+        .design-image:hover .image-overlay,
+        .design-image:focus-visible .image-overlay {
+            opacity: 1
+        }
+
+        .design-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            padding: 23px;
+            min-width: 0
+        }
+
+        .design-label {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--b100);
+            color: var(--c800);
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .06em;
+            text-transform: uppercase
+        }
+
+        .design-info h4 {
+            color: var(--c950);
+            font-size: 1.18rem;
+            margin: 14px 0 8px
+        }
+
+        .design-price {
+            color: var(--c700);
+            font-size: 2.1rem;
+            line-height: 1.15;
+            font-weight: 800;
+            margin: 0 0 10px
+        }
+
+        .design-info p {
+            color: var(--muted);
+            font-size: .9rem;
+            line-height: 1.8;
+            margin-bottom: 15px
+        }
+
+        .design-info ul {
+            display: grid;
+            gap: 9px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 22px;
+            width: 100%
+        }
+
+        .design-info ul li {
+            position: relative;
+            padding-left: 23px;
+            color: #59483a;
+            font-size: .84rem;
+            line-height: 1.65
+        }
+
+        .design-info ul:not(.feature-list) li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--c500);
+            font-weight: 900
+        }
+
+        .design-info .feature-list li {
+            padding-left: 0
+        }
+
+        .design-info .feature-list li:before {
+            content: none
+        }
+
+        .included-heading {
+            color: var(--c900);
+            font-weight: 800;
+            font-size: .9rem;
+            margin: 5px 0 12px
+        }
+
+        .design-note {
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: .8rem !important
+        }
+
+        .plan-divider {
+            height: 1px;
+            width: 100%;
+            background: var(--line);
+            margin: 17px 0 10px
+        }
+
+        .portfolio-button {
+            width: 100%;
+            margin-top: auto;
+            border-radius: 13px;
+            padding: 13px 16px
+        }
+
+        .design-card-featured {
+            display: grid;
+            grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr)
+        }
+
+        .design-card-featured .design-image {
+            height: 100%;
+            min-height: 460px;
+            aspect-ratio: auto
+        }
+
+        .design-card-featured .design-info {
+            padding: clamp(23px, 4vw, 38px)
+        }
+
+        .portfolio-note,
+        .payment-notice {
+            margin-top: 55px;
+            padding: clamp(27px, 5vw, 52px);
+            text-align: center;
+            background: var(--b100);
+            border: 1px solid var(--b200);
+            border-radius: var(--radius)
+        }
+
+        .portfolio-note h3,
+        .payment-notice h3 {
+            color: var(--c950);
+            font-size: clamp(1.6rem, 3.5vw, 2.35rem);
+            margin-bottom: 15px
+        }
+
+        .portfolio-note p,
+        .payment-notice p {
+            max-width: 780px;
+            margin: 0 auto 12px;
+            color: var(--muted);
+            line-height: 1.85
+        }
+
+        .portfolio-note .portfolio-button,
+        .payment-notice .portfolio-button {
+            display: inline-flex;
+            width: auto;
+            max-width: 100%;
+            margin-top: 12px
+        }
+
+        .payment-notice {
+            max-width: 850px;
+            margin: 42px auto 0;
+            background: linear-gradient(135deg, #f7eee3, #fffdf9);
+            border-color: var(--b300)
+        }
+
+        .payment-icon {
+            display: block;
+            font-size: 1.8rem;
+            margin-bottom: 8px
+        }
+
+        .services {
+            background: var(--cream)
+        }
+
+        .service-grid,
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px
+        }
+
+        .service-card,
+        .benefit-card {
+            min-width: 0;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 8px 24px #3c271b0b
+        }
+
+        .service-card .icon,
+        .benefit-card>div {
+            font-size: 1.8rem;
+            margin-bottom: 13px
+        }
+
+        .service-card h3,
+        .benefit-card h3 {
+            color: var(--c950);
+            font-size: 1.22rem;
+            margin-bottom: 10px
+        }
+
+        .service-card h4 {
+            color: var(--c700);
+            font-size: 1.7rem;
+            margin: 0 0 12px
+        }
+
+        .service-card p,
+        .benefit-card p {
+            color: var(--muted);
+            font-size: .92rem;
+            line-height: 1.8
+        }
+
+        .service-card ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+            color: #59483a
+        }
+
+        .benefits {
+            background: var(--white)
+        }
+
+        .benefit-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr))
+        }
+
+        .benefit-card {
+            padding: 24px
+        }
+
+        .benefit-card p {
+            margin-bottom: 0
+        }
+
+        .contact-section {
+            background: var(--b100)
+        }
+
+        .contact-box {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+            gap: clamp(28px, 5vw, 65px);
+            align-items: start;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            padding: clamp(25px, 5vw, 55px);
+            box-shadow: var(--shadow)
+        }
+
+        .contact-info>span {
+            color: var(--c700);
+            font-weight: 800;
+            font-size: .75rem;
+            letter-spacing: .13em;
+            text-transform: uppercase
+        }
+
+        .contact-info h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+            margin: 12px 0 16px
+        }
+
+        .contact-info>p,
+        .contact-data p {
+            color: var(--muted)
+        }
+
+        .contact-data a {
+            color: var(--c800);
+            text-underline-offset: 3px
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            min-width: 0;
+            padding: 22px;
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 18px
+        }
+
+        .contact-form label {
+            font-size: .85rem;
+            font-weight: 700;
+            color: var(--c900)
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            min-width: 0;
+            padding: 14px 15px;
+            color: var(--ink);
+            background: white;
+            border: 1px solid #ded0c0;
+            border-radius: 11px
+        }
+
+        .contact-form textarea {
+            min-height: 125px;
+            resize: vertical
+        }
+
+        .contact-form button {
+            width: 100%;
+            border-radius: 12px;
+            min-height: 49px;
+            margin-top: 7px
+        }
+
+        .footer {
+            background: var(--c950);
+            color: #f8eee2;
+            padding-top: 58px
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 35px;
+            padding-bottom: 45px
+        }
+
+        .footer-logo {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+            margin-bottom: 10px
+        }
+
+        .footer h3 {
+            font-size: 1.15rem;
+            margin-bottom: 9px
+        }
+
+        .footer h4 {
+            font-size: .95rem;
+            margin-bottom: 14px;
+            color: #e6d0b5
+        }
+
+        .footer p,
+        .footer a {
+            color: #d7c4b2;
+            font-size: .88rem
+        }
+
+        .footer a {
+            display: block;
+            width: fit-content;
+            margin: 8px 0;
+            text-decoration: none
+        }
+
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 4px
+        }
+
+        .copyright {
+            border-top: 1px solid #ffffff21;
+            padding: 20px;
+            text-align: center;
+            color: #d7c4b2;
+            font-size: .8rem
+        }
+
+        .whatsapp-floating {
+            position: fixed;
+            z-index: 900;
+            right: max(18px, env(safe-area-inset-right));
+            bottom: max(18px, env(safe-area-inset-bottom));
+            width: 56px;
+            height: 56px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #287d50;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 8px 25px #0003;
+            transition: transform .2s
+        }
+
+        .whatsapp-floating:hover {
+            transform: translateY(-3px)
+        }
+
+        @media(max-width:1000px) {
+            .nav {
+                min-height: 78px;
+                gap: 15px
+            }
+
+            .nav nav {
+                gap: 15px
+            }
+
+            .nav nav a {
+                font-size: .84rem
+            }
+
+            .header-button {
+                padding: 11px 15px;
+                font-size: .82rem
+            }
+
+            .hero-grid {
+                gap: 35px
+            }
+
+            .portfolio-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .portfolio-gallery-single {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .design-card-featured {
+                grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr)
+            }
+
+            .design-card-featured .design-image {
+                min-height: 380px
+            }
+        }
+
+        @media(max-width:720px) {
+            html {
+                scroll-padding-top: 125px
+            }
+
+            .container {
+                width: min(var(--max), calc(100% - 30px))
+            }
+
+            .nav {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-block: 11px;
+                gap: 12px
+            }
+
+            .logo img {
+                width: 42px;
+                height: 42px
+            }
+
+            .logo span {
+                font-size: .72rem
+            }
+
+            .nav nav {
+                order: 3;
+                width: 100%;
+                justify-content: space-between;
+                gap: 10px;
+                padding-top: 8px;
+                border-top: 1px solid var(--line)
+            }
+
+            .nav nav a {
+                font-size: .84rem;
+                padding: 4px 0
+            }
+
+            .header-button {
+                padding: 10px 13px;
+                font-size: .79rem
+            }
+
+            .hero {
+                padding: 50px 0 58px
+            }
+
+            .hero-grid {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .hero-content {
+                order: 1
+            }
+
+            .hero-preview {
+                order: 2;
+                max-width: 560px;
+                width: 100%;
+                margin-inline: auto
+            }
+
+            .hero h1 {
+                font-size: clamp(2.25rem, 9vw, 3.5rem)
+            }
+
+            .numbers {
+                gap: 10px
+            }
+
+            .numbers span {
+                font-size: .7rem
+            }
+
+            .section {
+                padding: 58px 0
+            }
+
+            .design-card-featured {
+                display: flex;
+                flex-direction: column
+            }
+
+            .design-card-featured .design-image {
+                min-height: 0;
+                height: auto;
+                aspect-ratio: 4/5
+            }
+
+            .design-card-featured .design-info {
+                padding: 23px
+            }
+
+            .contact-box {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .footer-grid>div:first-child {
+                grid-column: 1/-1
+            }
+        }
+
+        @media(max-width:520px) {
+
+            .portfolio-gallery,
+            .portfolio-gallery-single {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 18px
+            }
+
+            .design-info {
+                padding: 20px
+            }
+
+            .design-image {
+                aspect-ratio: 4/4.7
+            }
+
+            .image-overlay {
+                opacity: 1
+            }
+
+            .portfolio-note,
+            .payment-notice {
+                padding: 27px 19px;
+                margin-top: 42px
+            }
+
+            .portfolio-note .portfolio-button,
+            .payment-notice .portfolio-button {
+                width: 100%
+            }
+
+            .service-grid,
+            .benefit-grid {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .service-card,
+            .benefit-card {
+                padding: 23px
+            }
+
+            .contact-box {
+                padding: 21px;
+                border-radius: 19px
+            }
+
+            .contact-form {
+                padding: 15px
+            }
+
+            .footer-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 25px
+            }
+
+            .footer-grid>div:first-child {
+                grid-column: auto
+            }
+
+            .numbers {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+
+            .numbers strong {
+                font-size: 1.1rem
+            }
+
+            .numbers span {
+                font-size: .66rem
+            }
+        }
+
+        @media(max-width:360px) {
+            .container {
+                width: calc(100% - 24px)
+            }
+
+            .logo strong {
+                font-size: .93rem
+            }
+
+            .header-button {
+                padding: 9px 10px;
+                font-size: .72rem
+            }
+
+            .nav nav a {
+                font-size: .77rem
+            }
+
+            .hero-actions .button {
+                width: 100%
+            }
+
+            .design-info {
+                padding: 17px
+            }
+
+            .numbers {
+                gap: 7px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+                animation-duration: .01ms !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#inicio" aria-label="Páginas Web Loja, inicio"><img src="foto.png"
+                    alt="Logo de Páginas Web Loja">
+                <div><strong>Páginas Web Loja</strong><span>Diseño Web Profesional</span></div>
+            </a>
+            <nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a
+                    href="#proyectos">Portafolio</a><a href="#contacto">Contacto</a></nav>
+            <a class="header-button"
+                href="https://wa.me/593960934663?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20digital."
+                target="_blank" rel="noopener noreferrer">Cotizar ahora</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge">🌐 Diseño y desarrollo web en Loja, Ecuador</div>
+                    <h1>Tu idea merece una página web que destaque</h1>
+                    <p>Diseñamos páginas web, invitaciones digitales y menús online con una presentación cuidada, fácil
+                        de usar y adaptada a celulares, tablets y computadoras.</p>
+                    <div class="hero-actions"><a class="button"
+                            href="https://wa.me/593960934663?text=Hola%2C%20quiero%20cotizar%20mi%20proyecto%20web."
+                            target="_blank" rel="noopener noreferrer">Cuéntanos tu idea ↗</a><a
+                            class="button button-secondary" href="#proyectos">Explorar portafolio</a></div>
+                    <div class="numbers"></div>
+                </div>
+                <div class="hero-preview"><img src="Invitación de boda en dispositivos-Photoroom.png"
+                        alt="Ejemplo de invitación digital presentada en distintos dispositivos" class="hero-foto"
+                        fetchpriority="high"></div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section portfolio-special">
+            <div class="container">
+                <div class="section-header"><span>Nuestro portafolio</span>
+                    <h2>Invitaciones digitales para momentos únicos</h2>
+                    <p>Explora los ejemplos y elige la modalidad que mejor se adapte a tu celebración. Creamos diseños
+                        para todo tipo de evento y temática.</p>
+                </div>
+
+                <div class="portfolio-category">
+                    <div class="portfolio-category-heading"><span class="portfolio-kicker">Diseños digitales</span>
+                        <h3>Invitaciones desde $15</h3>
+                        <p>Invitaciones web con la información de tu evento, fáciles de compartir por WhatsApp.</p>
+                    </div>
+                    <div class="portfolio-gallery">
+                        <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/boda_10/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir invitación de boda de 15 dólares"><img
+                                    src="boda10.png" alt="Diseño de invitación digital para boda" loading="lazy"><span
+                                    class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Bodas</span>
+                                <h4>Invitación de boda</h4>
+                                <div class="design-price">$15</div>
+                                <p>Una presentación especial para anunciar su gran día.</p>
+                                <ul>
+                                    <li>Datos y horario del evento</li>
+                                    <li>Confirmación de asistencia por WhatsApp</li>
+                                    <li>Ubicación mediante GPS</li>
+                                    <li>Enlace para compartir</li>
+                                </ul><a class="portfolio-button" href="https://tarjetavirtual.github.io/boda_10/"
+                                    target="_blank" rel="noopener noreferrer">Ver diseño ↗</a>
+                            </div>
+                        </article>
+                        <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/bautizo_10/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir invitación de bautizo de 15 dólares"><img
+                                    src="baut.png" alt="Diseño de invitación digital para bautizo"
+                                    loading="lazy"><span class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Bautizos</span>
+                                <h4>Invitación de bautizo</h4>
+                                <div class="design-price">$15</div>
+                                <p>Un diseño delicado para compartir este momento especial con familiares y amigos.</p>
+                                <ul>
+                                    <li>Información de la celebración</li>
+                                    <li>Confirmación por WhatsApp</li>
+                                    <li>Ubicación mediante GPS</li>
+                                    <li>Diseño personalizado</li>
+                                </ul><a class="portfolio-button" href="https://tarjetavirtual.github.io/bautizo_10/"
+                                    target="_blank" rel="noopener noreferrer">Ver diseño ↗</a>
+                            </div>
+                        </article>
+                        <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/baby-shower_conejita/" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Abrir invitación de baby shower de 15 dólares"><img src="baby10.png"
+                                    alt="Diseño de invitación digital para baby shower" loading="lazy"><span
+                                    class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Baby shower</span>
+                                <h4>Bienvenida del bebé</h4>
+                                <div class="design-price">$15</div>
+                                <p>Una invitación tierna para compartir la alegría de la llegada del bebé.</p>
+                                <ul>
+                                    <li>Datos de la celebración</li>
+                                    <li>Confirmación por WhatsApp</li>
+                                    <li>Ubicación mediante GPS</li>
+                                    <li>Temática a elección</li>
+                                </ul><a class="portfolio-button"
+                                    href="https://tarjetavirtual.github.io/baby-shower_conejita/" target="_blank"
+                                    rel="noopener noreferrer">Ver diseño ↗</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+              
+
+                <div class="portfolio-category">
+                    <div class="portfolio-category-heading"><span class="portfolio-kicker">Nuestra especialidad</span>
+                        <h3>Invitaciones web para bodas</h3>
+                        <p>Dos estilos para elegir. Ambos se pueden adaptar a los colores y la temática que deseen.</p>
+                    </div>
+                    <div class="portfolio-gallery">
+                        <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/BodaElegante/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir ejemplo Boda Elegante"><img src="Captura de pantalla 2026-10-24 225256.jpg"
+                                    alt="Ejemplo de invitación web Boda Elegante" loading="lazy"><span
+                                    class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Diseño elegante</span>
+                                <h4>Boda Elegante</h4>
+                                <h4>Opción 1: invitación general</h4>
+                                <div class="design-price">$50</div>
+                                <p>Una invitación web para compartir los detalles de su boda. No incluye nombres
+                                    individuales ni pases por invitado.</p>
+                                <ul>
+                                    <li>Información del evento</li>
+                                    <li>Presentación digital cuidada</li>
+                                    <li>Enlace para compartir</li>
+                                    <li>Diseño adaptable a dispositivos</li>
+                                </ul>
+                                <div class="plan-divider"></div>
+                                <h4>Opción 2: con nombres y pases</h4>
+                                <div class="design-price">$75</div>
+                                <p>Todas las invitaciones que necesiten dentro del paquete acordado, personalizadas con
+                                    nombres y pases individuales, por un solo pago.</p><a class="portfolio-button"
+                                    href="https://tarjetavirtual.github.io/BodaElegante/" target="_blank"
+                                    rel="noopener noreferrer">Ver Boda Elegante ↗</a>
+                            </div>
+                        </article>
+                        <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/BodaFlor/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir ejemplo Boda Burgundy"><img src="Gemini_Generated_Image_1kzpig1kzpig1kzp.jpg"
+                                    alt="Ejemplo de invitación web floral para boda" loading="lazy"><span
+                                    class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Diseño floral</span>
+                                <h4>Boda Flor</h4>
+                                <h4>Opción 1: invitación general</h4>
+                                <div class="design-price">$50</div>
+                                <p>Un diseño romántico para anunciar su celebración. No incluye nombres individuales ni
+                                    pases por invitado.</p>
+                                <ul>
+                                    <li>Información de ceremonia y recepción</li>
+                                    <li>Presentación digital</li>
+                                    <li>Enlace para compartir</li>
+                                    <li>Diseño adaptable a dispositivos</li>
+                                </ul>
+                                <div class="plan-divider"></div>
+                                <h4>Opción 2: con nombres y pases</h4>
+                                <div class="design-price">$75</div>
+                                <p>Invitaciones personalizadas con el nombre de cada invitado y sus pases asignados, con
+                                    un solo pago por el paquete acordado.</p><a class="portfolio-button"
+                                    href="https://tarjetavirtual.github.io/BodaFlor/" target="_blank"
+                                    rel="noopener noreferrer">Ver Boda Flor ↗</a>
+                            </div>
+                        </article>
+                          <article class="design-card"><a class="design-image"
+                                href="https://tarjetavirtual.github.io/boda_digital/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir ejemplo Boda Burgundy"><img src="rosas.jpg"
+                                    alt="Ejemplo de invitación web floral para boda" loading="lazy"><span
+                                    class="image-overlay">Ver invitación ↗</span></a>
+                            <div class="design-info"><span class="design-label">Diseño floral</span>
+                                <h4>Boda Isabella</h4>
+                                <h4>Opción 1: invitación general</h4>
+                                <div class="design-price">$50</div>
+                                <p>Un diseño romántico para anunciar su celebración. No incluye nombres individuales ni
+                                    pases por invitado.</p>
+                                <ul>
+                                    <li>Información de ceremonia y recepción</li>
+                                    <li>Presentación digital</li>
+                                    <li>Enlace para compartir</li>
+                                    <li>Diseño adaptable a dispositivos</li>
+                                </ul>
+                                <div class="plan-divider"></div>
+                                <h4>Opción 2: con nombres y pases</h4>
+                                <div class="design-price">$75</div>
+                                <p>Invitaciones personalizadas con el nombre de cada invitado y sus pases asignados, con
+                                    un solo pago por el paquete acordado.</p><a class="portfolio-button"
+                                    href="https://tarjetavirtual.github.io/boda_digital/" target="_blank"
+                                    rel="noopener noreferrer">Ver Boda Isabella ↗</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="payment-notice"><span class="payment-icon" aria-hidden="true">🤎</span>
+                    <h3>Primero recibes tu invitación; el pago es al final</h3>
+                    <p>Trabajamos para que puedas revisar el resultado de tu invitación. <strong>El pago se realiza al
+                            final, después de recibir tu invitación.</strong></p>
+                    <p>Consulta con nosotros las condiciones del paquete y los diseños disponibles antes de comenzar.
+                    </p><a class="portfolio-button"
+                        href="https://wa.me/593960934663?text=Hola%2C%20quisiera%20consultar%20los%20precios%2C%20dise%C3%B1os%20y%20condiciones%20de%20las%20invitaciones."
+                        target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+                </div>
+
+                <div class="portfolio-category">
+                    <div class="portfolio-category-heading"><span class="portfolio-kicker">Para restaurantes y
+                            negocios</span>
+                        <h3>Menú y catálogo digital</h3>
+                        <p>Presenta tus platos o productos de forma organizada y accesible desde un enlace.</p>
+                    </div>
+                    <div class="portfolio-gallery portfolio-gallery-single">
+                        <article class="design-card design-card-featured"><a class="design-image"
+                                href="https://cftr28.github.io/menupapas/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir ejemplo visual de menú digital"><img
+                                    src="papas.jpg" alt="Ejemplo visual de menú digital para restaurante o negocio"
+                                    loading="lazy"><span class="image-overlay">Ver ejemplo ↗</span></a>
+                            <div class="design-info"><span class="design-label">Para tu negocio</span>
+                                <h4>Menú digital</h4>
+                                <div class="design-price">$35</div>
+                                <p>Una forma moderna de mostrar tus platos, productos y precios a tus clientes.</p>
+                                <ul>
+                                    <li>Presentación de platos o productos</li>
+                                    <li>Diseño adaptado a tu negocio</li>
+                                    <li>Acceso mediante enlace web</li>
+                                    <li>Consulta desde celulares y computadoras</li>
+                                </ul><a class="portfolio-button" href="https://cftr28.github.io/menupapas/"
+                                    target="_blank" rel="noopener noreferrer">Ver ejemplo ↗</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="portfolio-note"><span class="portfolio-kicker">Diseñado para ti</span>
+                    <h3>Tu celebración, tu temática, tu estilo</h3>
+                    <p>Creamos invitaciones web para bodas, XV años, cumpleaños, bautizos, baby showers, revelaciones de
+                        género, aniversarios, graduaciones, primeras comuniones y mucho más.</p>
+                    <p><strong>¿Tienes una temática en mente?</strong> Cuéntanos tu idea. Podemos adaptar colores,
+                        estilo y detalles para que tu invitación vaya con la celebración.</p>
+                    <p>Pregúntanos por los diseños disponibles y te ayudaremos a elegir la opción adecuada.</p><a
+                        class="portfolio-button"
+                        href="https://wa.me/593960934663?text=Hola%2C%20quisiera%20conocer%20los%20dise%C3%B1os%20disponibles%20y%20las%20tem%C3%A1ticas%20para%20invitaciones%20web."
+                        target="_blank" rel="noopener noreferrer">Consultar diseños por WhatsApp ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section services">
+            <div class="container">
+                <div class="section-header"><span>Otros servicios</span>
+                    <h2>Soluciones digitales para tu negocio</h2>
+                    <p>Además de invitaciones, creamos herramientas digitales para que tu negocio se presente mejor y
+                        llegue a más clientes.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="icon" aria-hidden="true">🌐</div>
+                        <h3>Landing page</h3>
+                        <h4>$120</h4>
+                        <p>Una página profesional para presentar tu empresa, servicio o producto.</p>
+                        <ul>
+                            <li>Diseño adaptable a dispositivos</li>
+                            <li>Información organizada de tu negocio</li>
+                            <li>Botones de contacto</li>
+                            <li>Consulta las opciones de dominio y hosting incluidas en tu plan</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon" aria-hidden="true">🛒</div>
+                        <h3>Tienda online (ecommerce)</h3>
+                        <h4>$290</h4>
+                        <p>Una tienda online para mostrar y vender tus productos por internet.</p>
+                        <ul>
+                            <li>Catálogo de productos</li>
+                            <li>Diseño adaptado a celulares y computadoras</li>
+                            <li>Opciones de contacto y pedido</li>
+                            <li>Consulta las características incluidas en el paquete</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contacto" class="section contact-section">
+            <div class="container contact-box">
+                <div class="contact-info"><span>Contacto</span>
+                    <h2>Cuéntanos qué tienes en mente</h2>
+                    <p>Escríbenos para consultar precios, diseños disponibles o solicitar una propuesta para tu negocio
+                        o celebración.</p>
+                    <div class="contact-data">
+                        <p>📍 Loja, Ecuador</p>
+                        <p>📱 WhatsApp: <strong>+593 96 093 4663</strong></p>
+                        <p>📸 Instagram: <a href="https://www.instagram.com/paginas_web_loja/" target="_blank"
+                                rel="noopener noreferrer">Páginas Web Loja</a></p>
+                        <p>📘 Facebook: <a href="https://www.facebook.com/profile.php?id=61588346623329" target="_blank"
+                                rel="noopener noreferrer">Páginas Web Loja</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" id="whatsappForm"><label for="name">Tu nombre</label><input type="text"
+                        id="name" name="name" placeholder="Escribe tu nombre" autocomplete="name" required><label
+                        for="service">¿Qué servicio necesitas?</label><select id="service" name="service" required>
+                        <option value="" selected disabled>Selecciona un servicio</option>
+                        <option>Invitación digital general desde $15</option>
+                        <option>Invitación XV años general $25</option>
+                        <option>Invitaciones XV años con nombres y pases $55</option>
+                        <option>Invitación de boda general $50</option>
+                        <option>Invitaciones de boda con nombres y pases $75</option>
+                        <option>Menú digital $35</option>
+                        <option>Landing page $120</option>
+                        <option>Tienda online $290</option>
+                        <option>Otro proyecto digital</option>
+                    </select><label for="message">Cuéntanos un poco más (opcional)</label><textarea id="message"
+                        name="message"
+                        placeholder="Tipo de evento, temática, fecha o detalles de tu negocio"></textarea><button
+                        type="submit">Enviar solicitud por WhatsApp ↗</button></form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><img src="foto.png" class="footer-logo" alt="Logo de Páginas Web Loja" loading="lazy">
+                <h3>Páginas Web Loja</h3>
+                <p>Diseño web profesional e invitaciones digitales para eventos y negocios en Ecuador.</p>
+            </div>
+            <div>
+                <h4>Explora</h4><a href="#proyectos">Invitaciones digitales</a><a href="#servicios">Páginas web</a><a
+                    href="#servicios">Tiendas online</a><a href="#proyectos">Menú digital</a>
+            </div>
+            <div>
+                <h4>Contacto</h4><a href="https://wa.me/593960934663" target="_blank"
+                    rel="noopener noreferrer">WhatsApp</a><a href="https://www.instagram.com/paginas_web_loja/"
+                    target="_blank" rel="noopener noreferrer">Instagram</a><a
+                    href="https://www.facebook.com/profile.php?id=61588346623329" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+            </div>
+        </div>
+        <div class="copyright">© 2026 Páginas Web Loja · Todos los derechos reservados.</div>
+    </footer>
+    <a class="whatsapp-floating"
+        href="https://wa.me/593960934663?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">💬</a>
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+            if (!name || !service) { alert('Por favor, escribe tu nombre y selecciona el servicio que necesitas.'); return; }
+            const text = ['Hola, soy ' + name + '.', 'Me interesa: ' + service + '.', message ? 'Detalles: ' + message : ''].filter(Boolean).join('\n');
+            window.open('https://wa.me/593960934663?text=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
+        });
+    </script>
+</body>
+
+</html>
